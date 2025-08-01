@@ -43,6 +43,7 @@ This project explores the use of **Variational Autoencoders (VAEs)** to generate
 ---
 
 ##Sample Outcome
+
 {
   "HP": 75.3,
   "Attack": 101.7,
@@ -57,19 +58,21 @@ This project explores the use of **Variational Autoencoders (VAEs)** to generate
 ---
 
 ##Battle Simulation
-Each generated Pokémon battles a randomly chosen real Pokémon using a lightweight simulator based on:
 
-Type effectiveness chart
+- Each generated Pokémon battles a randomly chosen real Pokémon using a lightweight simulator based on:
 
-Attack vs. Defense (physical or special, randomly selected)
+- Type effectiveness chart
 
-Speed-based turn priority
+- Attack vs. Defense (physical or special, randomly selected)
 
-Random damage variation (85%–100%)
+- Speed-based turn priority
+
+- Random damage variation (85%–100%)
 
 ---
 
 ## Sample Results
+
 Validation Results (out of 100 battles):
 Generated Pokémon Wins: 58 (58.00%)
 Real Pokémon Wins:      39 (39.00%)
@@ -78,35 +81,38 @@ Draws:                   3 (3.00%)
 ---
 
 ##Challenges Faced
-Balancing KL Divergence: Too high led to stat collapse, too low caused overfitting.
 
-Ensuring diversity in Type 1/Type 2 outputs.
+- Balancing KL Divergence: Too high led to stat collapse, too low caused overfitting.
 
-Preventing generation of weak stats (e.g., HP < 5) or single-type bias (e.g., mostly Water/None).
+- Ensuring diversity in Type 1/Type 2 outputs.
 
-Proper stat scaling for decoding meaningful Pokémon stats.
+- Preventing generation of weak stats (e.g., HP < 5) or single-type bias (e.g., mostly Water/None).
 
+- Proper stat scaling for decoding meaningful Pokémon stats.
+  
 ---
 
 ##Key Contributions
-Custom deep generative model for structured Pokémon data
 
-One-hot encoding and classification handling for dual types
+- Custom deep generative model for structured Pokémon data
 
-Statistical and battle-based evaluation for generated samples
+- One-hot encoding and classification handling for dual types
 
-Portable Colab notebook for reproducibility
+- Statistical and battle-based evaluation for generated samples
+
+- Portable Colab notebook for reproducibility
 
 ---
 
 ##Future Improvements
-🧠 Use Conditional VAE (CVAE) to guide generation (e.g., generate only Fire-type Pokémon)
 
-⚔️ Multi-turn battle engine for deeper validation
+- 🧠 Use Conditional VAE (CVAE) to guide generation (e.g., generate only Fire-type Pokémon)
 
-🃏 Generate movesets and abilities using NLP datasets
+- ⚔️ Multi-turn battle engine for deeper validation
 
-🧬 Introduce adversarial training (VAE-GAN hybrid) for sharper stat realism
+- 🃏 Generate movesets and abilities using NLP datasets
+
+- 🧬 Introduce adversarial training (VAE-GAN hybrid) for sharper stat realism
 
 
 

@@ -42,22 +42,22 @@ This project explores the use of **Variational Autoencoders (VAEs)** to generate
 
 ---
 
-##Sample Outcome
+## Sample Outcome
 
-{
-  "HP": 75.3,
-  "Attack": 101.7,
-  "Defense": 66.8,
-  "Sp. Atk": 92.5,
-  "Sp. Def": 78.1,
-  "Speed": 88.6,
-  "Type 1": "Fire",
-  "Type 2": "Flying"
-}
+- {
+  - "HP": 75.3,
+  - "Attack": 101.7,
+  - "Defense": 66.8,
+  - "Sp. Atk": 92.5,
+  - "Sp. Def": 78.1,
+  - "Speed": 88.6,
+  - "Type 1": "Fire",
+  - "Type 2": "Flying"
+-  }
 
 ---
 
-##Battle Simulation
+## Battle Simulation
 
 - Each generated Pokémon battles a randomly chosen real Pokémon using a lightweight simulator based on:
 
@@ -80,7 +80,7 @@ Draws:                   3 (3.00%)
 
 ---
 
-##Challenges Faced
+## Challenges Faced
 
 - Balancing KL Divergence: Too high led to stat collapse, too low caused overfitting.
 
@@ -92,7 +92,7 @@ Draws:                   3 (3.00%)
   
 ---
 
-##Key Contributions
+## Key Contributions
 
 - Custom deep generative model for structured Pokémon data
 
@@ -104,7 +104,7 @@ Draws:                   3 (3.00%)
 
 ---
 
-##Future Improvements
+## Future Improvements
 
 - 🧠 Use Conditional VAE (CVAE) to guide generation (e.g., generate only Fire-type Pokémon)
 
